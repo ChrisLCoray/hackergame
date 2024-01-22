@@ -5,6 +5,8 @@ is actually based on Bethesda Softworks' 2015 Post-Apocalypse Open World Role Pl
 
 In Fallout 4, players navigate the ruins of Boston trying to solve a mystery, interacting with different factions and making decisions. One of the mini-games that I thought was very well done was the computer hacking mini-game. Most of Bethesda/Zenimax's mini-games are fairly well done, but the hacking game using logic to pick the correct word was especially fun.
 
+To play the game, head over to my website: [https://hackergame.chrislcoray.com/](https://hackergame.chrislcoray.com/).
+
 ## Features
 
 ### localStorage

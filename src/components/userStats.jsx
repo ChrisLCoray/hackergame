@@ -26,5 +26,3 @@ export default function UserStats({ data, displayFull }) {
         </div>
     )
 }
-
-
