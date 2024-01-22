@@ -31,8 +31,6 @@ function validateAndFix() {
                         const word = words[i];
                         const length = word.length;
 
-                        console.log(`word = ${word}, length = ${length}`);
-
                         // Check for words that fall outside our params
                         // and duplicates because ChatGPT be like that sometimes
                         if ((length > 3 && length < 8) && newObject[length].indexOf(word) < 0) {

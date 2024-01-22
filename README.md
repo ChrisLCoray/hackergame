@@ -17,8 +17,8 @@ The code uses localStorage to store user's game stats - win/loss ratio and total
 
 If there's enough interest, I'm considering the following:
 - Add a timer constraint, so you only have 2 minutes to complete the puzzle.
-- Convert "points" to "currency" and add a "store" that uses the currency to buy power ups, e.g. you have to start with Novice (4-letter) puzzles and earn enough points to purchase 5-letter puzzles, the ability to buy additional power ups
-- Convert to installable PWA for web, or ReactNative for mobile.
+- Convert "points" to "currency" and add a "store" that uses the currency to buy power ups, e.g. you have to start with Novice (4-letter) puzzles and earn enough points to purchase 5-letter puzzles, the ability to buy additional power ups, maybe "upgrades" to the hint system that gives more information about matches, like highlighting words that also have matches, etc.
+- Convert to installable PWA for web, or ReactNative for mobile. I have a placeholder Service Worker (/sw.js) for now, but I haven't fully integrated it yet.
 - Add the ability to create an account and save user stats on my server (LAMP stack).
 
 ## Generation of Framework and Files
@@ -29,7 +29,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The words used in the puzzle were generated using [ChatGPT 3.5](https://openai.com/). For some reason, ChatGPT 3.5 (I didn't attempt it in newer versions) struggled to generate lists of words with a particular word length, or not adding duplicate words, despite me specifying that in the query. I wanted to leave room open to add words, so I dumped the output into a file called 'raw-words.json' in src/scriptAssets.
 
-To add words, simply add them in the JS Array format to that file, then navigate to the 'src/cliScripts' folder in a commnad line tool and type `node validate-words.mjs`.
+To add words, simply add them in the JS Array format to that file, then navigate to the 'src/cliScripts' folder in a command line tool and type `node validate-words.mjs`.
 
 ## Available NPM Scripts
 
