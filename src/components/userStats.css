@@ -1,0 +1,22 @@
+.user-stats {
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+.user-stats div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.user-stats .user-stats-full {
+    background-color: transparent;
+    border: none;
+    color: #00b30f;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-top: -.25rem;
+}

@@ -1,8 +1,35 @@
-# Getting Started with Create React App
+# "Hackertron 3000" Game
+
+This is a basic game I wrote to stay updated on React 18. The game plays a lot like Wordle, but the original concept
+is actually based on Bethesda Softworks' 2015 Post-Apocalypse Open World Role Playing Game, [Fallout 4](https://fallout.bethesda.net/en/games/fallout-4).
+
+In Fallout 4, players navigate the ruins of Boston trying to solve a mystery, interacting with different factions and making decisions. One of the mini-games that I thought was very well done was the computer hacking mini-game. Most of Bethesda/Zenimax's mini-games are fairly well done, but the hacking game using logic to pick the correct word was especially fun.
+
+## Features
+
+### localStorage
+
+The code uses localStorage to store user's game stats - win/loss ratio and total score for now.
+
+## Future Plans
+
+If there's enough interest, I'm considering the following:
+- Add a timer constraint, so you only have 2 minutes to complete the puzzle.
+- Convert "points" to "currency" and add a "store" that uses the currency to buy power ups, e.g. you have to start with Novice (4-letter) puzzles and earn enough points to purchase 5-letter puzzles, the ability to buy additional power ups
+- Convert to installable PWA for web, or ReactNative for mobile.
+- Add the ability to create an account and save user stats on my server (LAMP stack).
+
+## Generation of Framework and Files
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Word Generation
+
+The words used in the puzzle were generated using [ChatGPT 3.5](https://openai.com/). For some reason, ChatGPT 3.5 (I didn't attempt it in newer versions) struggled to generate lists of words with a particular word length, or not adding duplicate words, despite me specifying that in the query. I wanted to leave room open to add words, so I dumped the output into a file called 'raw-words.json' in src/scriptAssets.
+
+To add words, simply add them in the JS Array format to that file, then navigate to the 'src/cliScripts' folder in a commnad line tool and type `node validate-words.mjs`.
+
+## Available NPM Scripts
 
 In the project directory, you can run:
 

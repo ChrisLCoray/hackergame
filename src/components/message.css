@@ -1,0 +1,38 @@
+.message-box {
+    background-color: #0c240e;
+    border: 4px double #00b30f;
+    color: #00b30f;
+    font-size: 2rem;
+    padding: 2rem;
+    position: fixed;
+    top: 20vh;
+    left: calc(50% - 30vw);
+    width: 60vw;
+    z-index: 100;
+}
+
+.message-box-container {
+    position: relative;
+}
+
+.message-box-container .message-box-msg {
+    margin-bottom: 1rem;
+}
+
+.message-box-close {
+    background-color: transparent;
+    border: 1px solid #00b30f;
+    color: #00b30f;
+    cursor: pointer;
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+}
+
+.message-box.show {
+    display: block;
+}
+
+.message-box.hide {
+    display: none;
+}

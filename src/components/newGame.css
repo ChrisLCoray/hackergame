@@ -1,0 +1,22 @@
+.newgame-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.75rem;
+    width: 100%;
+}
+
+.newgame-container p {
+    justify-content: space-around;
+    flex-direction: row;
+    margin: .5rem 0;
+    text-align: left;
+}
+
+.newgame-container p.margin-b {
+    margin-bottom: 2rem;
+}
+
+.newgame-container .highlight {
+    background-color: #00b30f;
+    color: #0c240e;
+}
